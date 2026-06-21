@@ -114,7 +114,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | O usuário não possui conta cadastrada no sistema. |
 | Fluxo principal   | 1. Usuário acessa a tela de cadastro. 2. Preenche nome, e-mail e senha. 3. Confirma o cadastro. 4. Sistema valida os dados e cria a conta. 5. Usuário é redirecionado para a tela principal. |
 | Fluxo alternativo | Se o e-mail já estiver cadastrado, o sistema exibe mensagem de erro e solicita outro e-mail. Se a senha não atender aos requisitos mínimos, o sistema informa as regras e solicita nova senha. |
-| Pós-condição      | Conta criada e usuário autenticado no sistema. |
 
 #### UC02 — Fazer Login
 
@@ -124,7 +123,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | O usuário possui conta cadastrada no sistema. |
 | Fluxo principal   | 1. Usuário acessa a tela de login. 2. Informa e-mail e senha. 3. Sistema valida as credenciais. 4. Usuário é redirecionado para a tela principal. |
 | Fluxo alternativo | Se as credenciais estiverem incorretas, o sistema exibe mensagem de erro. Após 5 tentativas falhas, o acesso é temporariamente bloqueado. |
-| Pós-condição      | Usuário autenticado e com acesso ao sistema. |
 
 #### UC03 — Criar Hábito
 
@@ -134,7 +132,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado no sistema. |
 | Fluxo principal   | 1. Usuário acessa "Novo Hábito". 2. Preenche nome, categoria, frequência, ícone e cor. 3. Confirma a criação. 4. Sistema salva e exibe o hábito na tela principal. |
 | Fluxo alternativo | Se o usuário não preencher o nome, o sistema exibe mensagem de erro e solicita preenchimento. |
-| Pós-condição      | Hábito criado e disponível para check-in diário. |
 
 #### UC04 — Realizar Check-in
 
@@ -144,7 +141,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado e com ao menos um hábito cadastrado. |
 | Fluxo principal   | 1. Usuário acessa a tela principal. 2. Visualiza a lista de hábitos do dia. 3. Marca um hábito como concluído. 4. Sistema atualiza o indicador de progresso e o streak do hábito. |
 | Fluxo alternativo | Se o usuário tentar fazer check-in em um hábito já concluído no dia, o sistema permite desmarcar a conclusão. |
-| Pós-condição      | Check-in registrado, progresso e streak atualizados. |
 
 #### UC05 — Visualizar Streak
 
@@ -154,7 +150,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado e com ao menos um check-in registrado. |
 | Fluxo principal   | 1. Usuário acessa o hábito desejado. 2. Sistema exibe o contador de dias consecutivos atual e o melhor recorde histórico. 3. Se o streak estiver em risco, o sistema exibe um alerta. |
 | Fluxo alternativo | Se o usuário não realizou check-in no dia anterior, o sistema exibe o streak zerado e o recorde anterior como histórico. |
-| Pós-condição      | Informações de streak exibidas ao usuário. |
 
 #### UC06 — Consultar Estatísticas
 
@@ -164,7 +159,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado e com ao menos uma semana de check-ins registrados. |
 | Fluxo principal   | 1. Usuário acessa a tela de estatísticas. 2. Sistema exibe gráfico semanal/mensal, heatmap de atividade, taxa de conclusão e comparativo entre semanas. 3. Usuário pode filtrar por hábito ou período. |
 | Fluxo alternativo | Se não houver dados suficientes, o sistema exibe mensagem orientando o usuário a registrar hábitos por mais dias. |
-| Pós-condição      | Estatísticas exibidas conforme o período selecionado. |
 
 #### UC07 — Registrar Humor
 
@@ -174,7 +168,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado no sistema. |
 | Fluxo principal   | 1. Usuário acessa a tela de registro de humor. 2. Seleciona seu estado emocional na escala de 1 a 5. 3. Opcionalmente, adiciona uma observação escrita. 4. Confirma o registro. 5. Sistema salva e exibe o histórico atualizado. |
 | Fluxo alternativo | Se o usuário já registrou o humor no dia, o sistema permite editar o registro existente. |
-| Pós-condição      | Humor registrado e disponível no histórico e na correlação com consistência de hábitos. |
 
 #### UC08 — Receber Notificação
 
@@ -184,7 +177,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado, com hábitos cadastrados e notificações ativadas. |
 | Fluxo principal   | 1. Sistema identifica hábitos com lembrete configurado para o horário atual. 2. Envia notificação ao usuário. 3. Ao fim do dia, envia resumo de desempenho. 4. Se um streak estiver em risco, envia alerta específico. |
 | Fluxo alternativo | Se o usuário estiver com notificações desativadas no dispositivo, o sistema não envia alertas e exibe aviso nas configurações do app. |
-| Pós-condição      | Notificação entregue ao usuário conforme configuração. |
 
 #### UC09 — Ganhar Recompensa
 
@@ -194,7 +186,6 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado e com hábitos em andamento. |
 | Fluxo principal   | 1. Sistema detecta que o usuário atingiu um marco (ex: 7, 30 ou 100 dias consecutivos). 2. Concede automaticamente a medalha e os pontos correspondentes. 3. Exibe animação de celebração. 4. Atualiza o nível do usuário se aplicável. |
 | Fluxo alternativo | Se o usuário já possuir a recompensa, o sistema não a concede novamente, mas registra o novo recorde. |
-| Pós-condição      | Recompensa concedida, pontos e nível do usuário atualizados. |
 
 #### UC10 — Editar/Excluir Hábito
 
@@ -204,23 +195,10 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | Pré-condição      | Usuário autenticado e com ao menos um hábito cadastrado. |
 | Fluxo principal   | 1. Usuário acessa o hábito desejado. 2. Seleciona "Editar" ou "Excluir". 3a. Se editar: altera os dados desejados e confirma. O sistema salva as alterações. 3b. Se excluir: o sistema solicita confirmação. Após confirmação, o hábito e seu histórico são removidos. |
 | Fluxo alternativo | Se o usuário cancelar a exclusão na confirmação, o sistema retorna ao hábito sem alterações. |
-| Pós-condição      | Hábito atualizado ou removido permanentemente do sistema. |
 
 ---
 
 ## 4. Diagramas UML
-
-### 4.1 Como Criar os Diagramas
-
-| Ferramenta             | Tipos de Diagrama                                | Acesso |
-|------------------------|--------------------------------------------------|--------|
-| draw.io (diagrams.net) | Casos de uso, classes, sequência, atividades, ER | draw.io (gratuito, online) |
-| Lucidchart             | Todos os tipos UML                               | lucidchart.com (plano gratuito) |
-| Astah Community        | UML completo                                     | astah.net (gratuito para estudantes) |
-| PlantUML               | Gerado por código (texto)                        | plantuml.com (gratuito) |
-| StarUML                | UML completo com exportação                      | staruml.io (versão trial gratuita) |
-
-### 4.2 Diagramas Necessários para o HabitGo
 
 #### Diagrama de Casos de Uso
 
