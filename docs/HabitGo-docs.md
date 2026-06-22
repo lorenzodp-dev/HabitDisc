@@ -1,7 +1,6 @@
 # HabitGo
 
-**Projeto Integrador**
-Técnico em Desenvolvimento de Sistemas — SENAC — 2025
+**Versao**: v1.2
 
 **Membros**
 Lorenzo, Felipe, Enzo, João Pedro e Maycon
