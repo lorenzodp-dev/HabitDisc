@@ -1,0 +1,97 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="O89Qy-nnrU27F1jA6jN6">
+    <mxGraphModel dx="1471" dy="3232" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Sistema" vertex="1">
+          <mxGeometry height="80" width="40" x="63" y="-1755" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Sistema detecta que o usuário atingiou um marco (ex: 7,30 ou 100 dias consecutivos)." vertex="1">
+          <mxGeometry height="90" width="140" x="243" y="-1895" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="VeBuWhz3JU2QqPk4SdTG-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="103" y="-1705" as="sourcePoint" />
+            <mxPoint x="153" y="-1755" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Concede automaticamente a medalha e os pontos correspondentes." vertex="1">
+          <mxGeometry height="90" width="140" x="440" y="-2000" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="VeBuWhz3JU2QqPk4SdTG-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="-1840" as="sourcePoint" />
+            <mxPoint x="533" y="-1835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&amp;nbsp;Exibe animação de celebração." vertex="1">
+          <mxGeometry height="90" width="140" x="440" y="-1780" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-10" edge="1" parent="1" source="VeBuWhz3JU2QqPk4SdTG-6" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="VeBuWhz3JU2QqPk4SdTG-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="462.5" y="-1815" as="sourcePoint" />
+            <mxPoint x="557.5" y="-1885" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Atualiza o nível do usuário se aplicável." vertex="1">
+          <mxGeometry height="90" width="140" x="440" y="-1590" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-12" edge="1" parent="1" source="VeBuWhz3JU2QqPk4SdTG-9" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="VeBuWhz3JU2QqPk4SdTG-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="520" y="-1690" as="sourcePoint" />
+            <mxPoint x="510" y="-1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Se o usuário já possuir a recompensa, o sistema não a concede novamente, mas registra o novo recorde." vertex="1">
+          <mxGeometry height="90" width="140" x="13" y="-1550" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="81.5" y="-1670" as="sourcePoint" />
+            <mxPoint x="84.5" y="-1545.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Recompensa concedida, pontos e nível do usuário atualizados." vertex="1">
+          <mxGeometry height="90" width="140" x="240" y="-1460" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="VeBuWhz3JU2QqPk4SdTG-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="500" y="-1500" as="sourcePoint" />
+            <mxPoint x="587" y="-1415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;UC 09&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="90" x="38" y="-1870" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="90" x="260" y="-1965" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;2&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="90" x="570" y="-1990" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;3&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="90" x="570" y="-1770" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;4&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="90" x="570" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;5&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="90" x="268" y="-1540" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-26" parent="1" style="text;whiteSpace=wrap;fontSize=16;" value="Fluxo alternativo" vertex="1">
+          <mxGeometry height="40" width="120" x="140" y="-1620" as="geometry" />
+        </mxCell>
+        <mxCell id="VeBuWhz3JU2QqPk4SdTG-27" edge="1" parent="1" source="VeBuWhz3JU2QqPk4SdTG-26" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="200" y="-1610" as="sourcePoint" />
+            <mxPoint x="120" y="-1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

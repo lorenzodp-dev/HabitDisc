@@ -1,0 +1,93 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="DCK_Pnsg8WGAfXmnuJU6">
+    <mxGraphModel dx="1178" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-9" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Mu6sbnDsp-P7CPIntp9D-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-24" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Mu6sbnDsp-P7CPIntp9D-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;perimeterSpacing=1;" value="Usuario&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="110" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;UC-02&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="70" x="10" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-10" edge="1" parent="1" source="Mu6sbnDsp-P7CPIntp9D-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pré-condição:O usuário não possui conta cadstrada no sistema" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Usuario acessa a tela de login" vertex="1">
+          <mxGeometry height="110" width="190" x="160" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Informar o E-mail e senha&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="340" y="100" as="sourcePoint" />
+            <mxPoint x="370" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-19" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="150" as="sourcePoint" />
+            <mxPoint x="400" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sistema válida as credenciais" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-32" edge="1" parent="1" source="Mu6sbnDsp-P7CPIntp9D-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Mu6sbnDsp-P7CPIntp9D-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Se as credenciais estiverem incorretas" vertex="1">
+          <mxGeometry height="60" width="120" x="65" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="O sistema exbie uma mensagem de erro" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-34" edge="1" parent="1" source="Mu6sbnDsp-P7CPIntp9D-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ifWayuglfq16DfmrnkNI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-36" edge="1" parent="1" source="Mu6sbnDsp-P7CPIntp9D-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Mu6sbnDsp-P7CPIntp9D-35" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Apos 5 tentivas falhas" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="O acesso é temporariamente bloqueado" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="O usuario é redirecioando para a tela principal" vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-38" edge="1" parent="1" source="Mu6sbnDsp-P7CPIntp9D-20" style="endArrow=classic;html=1;rounded=0;exitX=0.705;exitY=1.032;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="500" y="210" as="sourcePoint" />
+            <mxPoint x="520" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="190" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="2" vertex="1">
+          <mxGeometry height="30" width="60" x="350" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="3" vertex="1">
+          <mxGeometry height="30" width="60" x="130" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu6sbnDsp-P7CPIntp9D-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="4" vertex="1">
+          <mxGeometry height="30" width="60" x="540" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

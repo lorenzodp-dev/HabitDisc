@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="DCK_Pnsg8WGAfXmnuJU6">
+    <mxGraphModel dx="1178" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ifWayuglfq16DfmrnkNI-25" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ifWayuglfq16DfmrnkNI-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-3" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=1;perimeterSpacing=1;" value="Usuario&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="130" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-38" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="340" />
+            </Array>
+            <mxPoint x="250" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pré-condição: o usario nao possui conta cadastrada no sistema" vertex="1">
+          <mxGeometry height="60" width="120" x="85" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tela de cadastro" vertex="1">
+          <mxGeometry height="130" width="220" x="140" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Preeche o nome , e-mail e senha" vertex="1">
+          <mxGeometry height="60" width="120" x="330" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;UC-01&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="70" x="10" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-40" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="135" />
+            </Array>
+            <mxPoint x="320" y="135" as="sourcePoint" />
+            <mxPoint x="340" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-41" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-27" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="200" as="sourcePoint" />
+            <mxPoint x="400" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Confimar o Cadastro" vertex="1">
+          <mxGeometry height="60" width="120" x="414" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-43" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="220" as="sourcePoint" />
+            <mxPoint x="400" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Sistema valida os dados e cria a conta&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="414" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-47" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-27" style="endArrow=classic;html=1;rounded=0;exitX=0.982;exitY=0.971;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="280" as="sourcePoint" />
+            <mxPoint x="400" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Conta criada e usuario autenticado no sistema" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-54" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ifWayuglfq16DfmrnkNI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-56" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Se o Usuário ja estiver cadastro" vertex="1">
+          <mxGeometry height="50" width="120" x="190" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="200" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;2&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="354" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-57" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Na tela do usuario vai exibir uma mensagem, e solicita outro e-mail" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-59" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ifWayuglfq16DfmrnkNI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-60" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Se a senha não atender aos requistos mininos" vertex="1">
+          <mxGeometry height="70" width="130" x="190" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="os sistema informa as regras e solicita nova senha" vertex="1">
+          <mxGeometry height="60" width="140" x="370" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-64" edge="1" parent="1" source="ifWayuglfq16DfmrnkNI-48" style="endArrow=classic;html=1;rounded=0;exitX=0.958;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="410" y="400" as="sourcePoint" />
+            <mxPoint x="590" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Usuário é redirecioando para a tela principal" vertex="1">
+          <mxGeometry height="80" width="150" x="600" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-66" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;3&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="145" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="ifWayuglfq16DfmrnkNI-68" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;4&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

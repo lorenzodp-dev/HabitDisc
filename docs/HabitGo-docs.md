@@ -202,17 +202,11 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 
 #### Diagrama de Casos de Uso
 
-Representa as interações entre o usuário e o sistema. Deve conter o ator "Usuário" conectado aos casos de uso UC01 a UC10 listados na seção 3.
+Ir para *HabitGo/docs/diagramas_uc*. Usamos arquivos .drawio/xxl
 
 #### Diagrama de Classes
 
-- **Usuario:** id, nome, email, senha, nivel, pontos, dataCadastro
-- **Habito:** id, nome, icone, cor, categoria, frequencia, idUsuario, dataCriacao
-- **CheckIn:** id, idHabito, data, concluido
-- **Streak:** id, idHabito, diasConsecutivos, melhorRecorde, ultimoCheckIn
-- **Humor:** id, idUsuario, data, valor (1-5), observacao
-- **Recompensa:** id, nome, descricao, tipoMarco, pontosNecessarios
-- **Categoria:** id, nome, icone, cor
+- A definir
 
 ---
 
@@ -220,129 +214,11 @@ Representa as interações entre o usuário e o sistema. Deve conter o ator "Usu
 
 ### 5.1 Modelo Entidade-Relacionamento (MER)
 
-
-| Entidade    | Atributos Principais                                                   | Relacionamentos |
-|-------------|------------------------------------------------------------------------|-----------------|
-| usuario     | id, nome, email, senha_hash, nivel, pontos, criado_em                  | 1 usuário possui N hábitos; 1 usuário possui N registros de humor |
-| habito      | id, nome, icone, cor, id_categoria, frequencia, id_usuario, criado_em  | 1 hábito pertence a 1 usuário; 1 hábito possui N check-ins; 1 hábito possui 1 streak |
-| checkin     | id, id_habito, data, concluido                                         | N check-ins pertencem a 1 hábito |
-| streak      | id, id_habito, dias_consecutivos, melhor_recorde, ultimo_checkin       | 1 streak pertence a 1 hábito |
-| humor       | id, id_usuario, data, valor (1-5), observacao                          | N humores pertencem a 1 usuário |
-| categoria   | id, nome, icone, cor                                                   | 1 categoria possui N hábitos |
-| recompensa  | id, nome, descricao, tipo_marco, pontos_necessarios                    | N recompensas podem ser conquistadas por N usuários (tabela associativa) |
+- A definir
 
 ### 5.2 Dicionário de Dados 
 
-#### Tabela `habito`
-
-| Campo        | Tipo          | Obrigatório | Descrição |
-|--------------|---------------|-------------|-----------|
-| id           | INT | Sim         | Identificador único do hábito |
-| nome         | VARCHAR(100)  | Sim         | Nome do hábito definido pelo usuário |
-| icone        | VARCHAR(50)   | Não         | Código do ícone selecionado |
-| cor          | VARCHAR(7)    | Não         | Código hexadecimal da cor (ex: #1A73E8) |
-| id_categoria | INT           | Sim         | Referência para a tabela CATEGORIA |
-| frequencia   | ENUM          | Sim         | Valores: DIARIA, DIAS_ESPECIFICOS, X_VEZES_SEMANA |
-| id_usuario   | INT / UUID    | Sim         | Referência para a tabela USUARIO (chave estrangeira) |
-| criado_em    | DATETIME      | Sim         | Data e hora de criação do hábito |
-
-#### Tabela: `usuario`
-
-| Campo       | Tipo         | Obrigatório | Descrição |
-|-------------|--------------|-------------|-----------|
-| id          | UUID         | Sim         | Identificador único do usuário, gerado automaticamente pelo sistema. |
-| nome        | VARCHAR(100) | Sim         | Nome completo ou apelido do usuário. |
-| email       | VARCHAR(150) | Sim         | Endereço de e-mail do usuário. Deve ser único no sistema. Utilizado para login. |
-| senha_hash  | VARCHAR(255) | Sim         | Senha do usuário armazenada em formato hash (ex: bcrypt). Nunca salva em texto plano. |
-| nivel       | INT          | Sim         | Nível atual do usuário no sistema de recompensas. Valor padrão: 1. |
-| pontos      | INT          | Sim         | Total de pontos acumulados pelo usuário por consistência e marcos atingidos. Valor padrão: 0. |
-| criado_em   | DATETIME     | Sim         | Data e hora do cadastro do usuário no sistema. |
-
----
-
-#### Tabela: `habito`
-
-| Campo        | Tipo         | Obrigatório | Descrição |
-|--------------|--------------|-------------|-----------|
-| id           | UUID         | Sim         | Identificador único do hábito, gerado automaticamente pelo sistema. |
-| nome         | VARCHAR(100) | Sim         | Nome do hábito definido livremente pelo usuário. |
-| icone        | VARCHAR(50)  | Não         | Código do ícone selecionado pelo usuário para representar o hábito. |
-| cor          | VARCHAR(7)   | Não         | Código hexadecimal da cor associada ao hábito (ex: #1A73E8). |
-| id_categoria | UUID         | Sim         | Chave estrangeira referenciando a tabela `categoria`. |
-| frequencia   | ENUM         | Sim         | Frequência de execução do hábito. Valores: `DIARIA`, `DIAS_ESPECIFICOS`, `X_VEZES_SEMANA`. |
-| id_usuario   | UUID         | Sim         | Chave estrangeira referenciando a tabela `usuario`. Indica o dono do hábito. |
-| criado_em    | DATETIME     | Sim         | Data e hora em que o hábito foi criado. |
-
----
-
-#### Tabela: `checkin`
-
-| Campo      | Tipo     | Obrigatório | Descrição |
-|------------|----------|-------------|-----------|
-| id         | UUID     | Sim         | Identificador único do registro de check-in. |
-| id_habito  | UUID     | Sim         | Chave estrangeira referenciando a tabela `habito`. Indica a qual hábito o check-in pertence. |
-| data       | DATE     | Sim         | Data em que o check-in foi realizado (formato: AAAA-MM-DD). |
-| concluido  | BOOLEAN  | Sim         | Indica se o hábito foi concluído naquele dia. Valor padrão: `false`. |
-
----
-
-#### Tabela: `streak`
-
-| Campo               | Tipo     | Obrigatório | Descrição |
-|---------------------|----------|-------------|-----------|
-| id                  | UUID     | Sim         | Identificador único do registro de streak. |
-| id_habito           | UUID     | Sim         | Chave estrangeira referenciando a tabela `habito`. Relação de 1 para 1. |
-| dias_consecutivos   | INT      | Sim         | Quantidade atual de dias consecutivos com check-in concluído. Valor padrão: 0. |
-| melhor_recorde      | INT      | Sim         | Maior sequência de dias consecutivos já atingida pelo usuário neste hábito. Valor padrão: 0. |
-| ultimo_checkin      | DATE     | Não         | Data do último check-in concluído. Usado para calcular se o streak está em risco ou foi quebrado. |
-
----
-
-#### Tabela: `humor`
-
-| Campo       | Tipo         | Obrigatório | Descrição |
-|-------------|--------------|-------------|-----------|
-| id          | UUID         | Sim         | Identificador único do registro de humor. |
-| id_usuario  | UUID         | Sim         | Chave estrangeira referenciando a tabela `usuario`. |
-| data        | DATE         | Sim         | Data do registro emocional (formato: AAAA-MM-DD). Deve ser única por usuário por dia. |
-| valor       | TINYINT      | Sim         | Valor numérico representando o estado emocional do usuário. Escala de 1 (muito ruim) a 5 (muito bem). |
-| observacao  | TEXT         | Não         | Anotação livre e opcional do usuário sobre seu estado emocional no dia. |
-
----
-
-#### Tabela: `categoria`
-
-| Campo  | Tipo        | Obrigatório | Descrição |
-|--------|-------------|-------------|-----------|
-| id     | UUID        | Sim         | Identificador único da categoria. |
-| nome   | VARCHAR(50) | Sim         | Nome da categoria (ex: Saúde, Produtividade, Aprendizado, Relacionamentos, Finanças, Personalizada). |
-| icone  | VARCHAR(50) | Não         | Código do ícone representativo da categoria. |
-| cor    | VARCHAR(7)  | Não         | Código hexadecimal da cor associada à categoria (ex: #34A853). |
-
----
-
-#### Tabela: `recompensa`
-
-| Campo               | Tipo         | Obrigatório | Descrição |
-|---------------------|--------------|-------------|-----------|
-| id                  | UUID         | Sim         | Identificador único da recompensa. |
-| nome                | VARCHAR(100) | Sim         | Nome da recompensa ou medalha (ex: "Sequência de 7 dias"). |
-| descricao           | TEXT         | Não         | Descrição detalhada da recompensa e de como ela é conquistada. |
-| tipo_marco          | ENUM         | Sim         | Tipo de marco que concede a recompensa. Valores: `STREAK_7`, `STREAK_30`, `STREAK_100`, `DESAFIO`, `NIVEL`. |
-| pontos_necessarios  | INT          | Sim         | Quantidade de pontos necessários para conquistar a recompensa. Valor 0 para recompensas por streak. |
-
----
-
-#### Tabela associativa: `usuario_recompensa`
-
-> Registra quais recompensas cada usuário já conquistou.
-
-| Campo          | Tipo     | Obrigatório | Descrição |
-|----------------|----------|-------------|-----------|
-| id_usuario     | UUID     | Sim         | Chave estrangeira referenciando a tabela `usuario`. |
-| id_recompensa  | UUID     | Sim         | Chave estrangeira referenciando a tabela `recompensa`. |
-| conquistado_em | DATETIME | Sim         | Data e hora em que o usuário conquistou a recompensa. |
-
+- A definir
 
 ---
 

@@ -1,0 +1,100 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="v01382Bs9k7TizsQnjHT">
+    <mxGraphModel dx="669" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuário" vertex="1">
+          <mxGeometry height="60" width="30" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Usuário acessa a tela principal." vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="260" />
+            </Array>
+            <mxPoint x="90" y="310" as="sourcePoint" />
+            <mxPoint x="170" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Visualiza a lista de hábitos do dia." vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-5" edge="1" parent="1" source="Ve9v5jhFMBwnUgr2_UWl-2" style="endArrow=classic;html=1;rounded=0;exitX=0.575;exitY=-0.053;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="180" as="sourcePoint" />
+            <mxPoint x="350" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Marca um hábito como concluído." vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-7" edge="1" parent="1" source="Ve9v5jhFMBwnUgr2_UWl-4" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="317" as="sourcePoint" />
+            <mxPoint x="411" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Sistema atualiza o indicador de progresso e o streak do hábito." vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="409.5" y="310" as="sourcePoint" />
+            <mxPoint x="410.5" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Se o usuário tentar fazer check-in em um hábito já concluído no dia, o sistema permite desmarcar a conclusão." vertex="1">
+          <mxGeometry height="90" width="120" x="20" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-13" edge="1" parent="1" source="Ve9v5jhFMBwnUgr2_UWl-1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Ve9v5jhFMBwnUgr2_UWl-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="190" y="520" as="sourcePoint" />
+            <mxPoint x="270" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Check-in registrado, progresso e streak atualizados." vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-15" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="Ve9v5jhFMBwnUgr2_UWl-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="412" y="450" as="sourcePoint" />
+            <mxPoint x="416" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;1&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;2&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="384" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;3&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="470" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;4&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="474" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;5&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="330" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;&amp;nbsp;Fluxo alternativo&amp;nbsp;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="130" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-22" edge="1" parent="1" source="Ve9v5jhFMBwnUgr2_UWl-21" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="110" y="390" as="sourcePoint" />
+            <mxPoint x="120" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ve9v5jhFMBwnUgr2_UWl-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;UC04&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="20" y="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
