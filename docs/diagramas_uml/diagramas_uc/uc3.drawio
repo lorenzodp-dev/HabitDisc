@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="DCK_Pnsg8WGAfXmnuJU6">
-    <mxGraphModel dx="975" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1193" dy="808" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -53,7 +53,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ícone e cor" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="210" as="geometry" />
+          <mxGeometry height="60" width="120" x="550" y="150" as="geometry" />
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-52" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -62,13 +62,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Confimar a criação" vertex="1">
-          <mxGeometry height="60" width="120" x="470" y="280" as="geometry" />
-        </mxCell>
-        <mxCell id="Mu6sbnDsp-P7CPIntp9D-54" edge="1" parent="1" source="Mu6sbnDsp-P7CPIntp9D-43" style="endArrow=classic;html=1;rounded=0;exitX=0.7;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="390" y="270" as="sourcePoint" />
-            <mxPoint x="470" y="270" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry height="60" width="120" x="540" y="230" as="geometry" />
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Confimar Hábito criado e disponível para check-in diáriocriação" vertex="1">
           <mxGeometry height="60" width="160" x="290" y="280" as="geometry" />
@@ -87,9 +81,6 @@
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="O sistema exibe mensagem de erro e solicita preechiemento" vertex="1">
           <mxGeometry height="60" width="120" x="250" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="Mu6sbnDsp-P7CPIntp9D-64" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;frequência&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="550" y="130" as="geometry" />
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-70" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -116,22 +107,16 @@
           <mxGeometry height="30" width="60" x="660" y="75" as="geometry" />
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-81" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="4" vertex="1">
-          <mxGeometry height="30" width="60" x="670" y="140" as="geometry" />
+          <mxGeometry height="30" width="60" x="670" y="165" as="geometry" />
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-82" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="5" vertex="1">
-          <mxGeometry height="30" width="60" x="680" y="220" as="geometry" />
+          <mxGeometry height="30" width="60" x="660" y="240" as="geometry" />
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-83" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="6" vertex="1">
-          <mxGeometry height="30" width="60" x="590" y="290" as="geometry" />
+          <mxGeometry height="30" width="60" x="360" y="240" as="geometry" />
         </mxCell>
         <mxCell id="Mu6sbnDsp-P7CPIntp9D-85" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="7" vertex="1">
-          <mxGeometry height="30" width="60" x="300" y="240" as="geometry" />
-        </mxCell>
-        <mxCell id="Mu6sbnDsp-P7CPIntp9D-87" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="8" vertex="1">
-          <mxGeometry height="30" width="60" x="130" y="430" as="geometry" />
-        </mxCell>
-        <mxCell id="Mu6sbnDsp-P7CPIntp9D-88" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=14;" value="9" vertex="1">
-          <mxGeometry height="30" width="60" x="530" y="380" as="geometry" />
+          <mxGeometry height="30" width="60" x="530" y="370" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="K8vGxF-Z_IR4KEAeM-Af">
-    <mxGraphModel dx="832" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="823" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -30,23 +30,14 @@
         <mxCell id="nVupGGW_RQXsmmoi--aG-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Exibe..." vertex="1">
           <mxGeometry height="30" width="60" x="350" y="160" as="geometry" />
         </mxCell>
-        <mxCell id="nVupGGW_RQXsmmoi--aG-8" edge="1" parent="1" source="nVupGGW_RQXsmmoi--aG-7" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" value="">
+        <mxCell id="nVupGGW_RQXsmmoi--aG-8" edge="1" parent="1" source="nVupGGW_RQXsmmoi--aG-7" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.457;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;" target="nVupGGW_RQXsmmoi--aG-9" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <mxPoint x="350" y="200" as="sourcePoint" />
-            <mxPoint x="310" y="230" as="targetPoint" />
+            <mxPoint x="350" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nVupGGW_RQXsmmoi--aG-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Grafo semanal/mensal" vertex="1">
-          <mxGeometry height="30" width="80" x="260" y="230" as="geometry" />
-        </mxCell>
-        <mxCell id="nVupGGW_RQXsmmoi--aG-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.086;exitY=0.905;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="365" y="190" as="sourcePoint" />
-            <mxPoint x="350" y="270" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nVupGGW_RQXsmmoi--aG-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Heatmap de atividade" vertex="1">
-          <mxGeometry height="30" width="60" x="310" y="280" as="geometry" />
+        <mxCell id="nVupGGW_RQXsmmoi--aG-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Gráfico semanal/mensal" vertex="1">
+          <mxGeometry height="30" width="80" x="280" y="270" as="geometry" />
         </mxCell>
         <mxCell id="nVupGGW_RQXsmmoi--aG-12" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.086;exitY=0.905;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
