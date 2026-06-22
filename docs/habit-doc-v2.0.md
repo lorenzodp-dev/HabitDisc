@@ -63,7 +63,7 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 | RF04  | Notificações         | Horário personalizado por hábito, notificação ao longo do dia e resumo semanal de desempenho. |
 | RF05  | Estatísticas         | Gráfico semanal/mensal, taxa de conclusão e comparativo entre semanas. |
 | RF06  | Categorias           | Categorias predefinidas: Saúde, Produtividade, Aprendizado, Relacionamentos, Finanças e Personalizada. |
-| RF08  | Registro de Humor    | Registro emocional diário opcional com histórico e correlação entre humor e consistência de hábitos. |
+| RF08  | Registro de Humor    | Registro emocional diário opcional com histórico. |
 | RF09  | Cadastro de Usuário  | O usuário pode criar uma conta com nome, e-mail e senha, e fazer login no aplicativo. |
 | RF10  | Edição e Exclusão    | O usuário pode editar ou excluir hábitos cadastrados a qualquer momento. |
 
@@ -144,7 +144,7 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 |-------------------|-----------|
 | Ator principal    | Usuário |
 | Pré-condição      | Usuário autenticado e com ao menos um check-in registrado. |
-| Fluxo principal   | 1. Usuário acessa o hábito desejado. 2. Sistema exibe o contador de dias consecutivos atual e o melhor recorde histórico. 3. Se o streak estiver em risco, o sistema exibe um alerta. |
+| Fluxo principal   | 1. Usuário acessa o hábito desejado. 2. Sistema exibe o contador de dias consecutivos atual e o melhor recorde histórico. |
 | Fluxo alternativo | Se o usuário não realizou check-in no dia anterior, o sistema exibe o streak zerado e o recorde anterior como histórico. |
 
 #### UC06 — Consultar Estatísticas
