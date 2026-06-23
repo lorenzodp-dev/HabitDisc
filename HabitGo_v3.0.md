@@ -218,18 +218,18 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 |-------------------|-----------|
 | Ator principal    | Usuário |
 | Pré-condição      | Usuário autenticado no sistema. |
-| Fluxo principal   | 1. Usuário acessa a tela de categorias. 2. Visualiza as categorias predefinidas e as suas próprias. 3a. Para criar: preenche nome, ícone e cor e confirma. 4a. Sistema salva e exibe a nova categoria. 3b. Para editar: seleciona uma categoria personalizada, altera os dados e confirma. 4b. Sistema salva as alterações. 3c. Para excluir: seleciona uma categoria personalizada e confirma a exclusão. 4c. Sistema remove a categoria. |
-| Fluxo alternativo | Se o usuário tentar editar ou excluir uma categoria predefinida, o sistema exibe mensagem informando que categorias predefinidas não podem ser alteradas. Se a categoria excluída estiver vinculada a hábitos existentes, o sistema move esses hábitos para a categoria "Personalizada". |
+| Fluxo principal   | 1. Usuário acessa a tela de configuração de hábitos. 2. Usuário acessa configuração de categorias. 3. Visualiza as categorias predefinidas e as suas próprias. 3a. Para criar: preenche nome, ícone e cor e confirma. 4a. Sistema salva e exibe a nova categoria. 3b. Para editar: seleciona uma categoria personalizada, altera os dados e confirma. 4b. Sistema salva as alterações. 3c. Para excluir: seleciona uma categoria personalizada e confirma a exclusão. 4c. Sistema remove a categoria. |
+| Fluxo alternativo | Se a categoria excluída estiver vinculada a hábitos existentes, sistema exibe erro e sinaliza que categorias com hábitos vinculados não podem ser apagadas. |
 
 ---
 
 ## 4. Diagramas UML
 
-#### Diagrama de Casos de Uso
+### Diagrama de Casos de Uso
 
 Ir para *HabitGo/docs/diagramas_uc*. Usamos arquivos drawio.
 
-#### Diagrama de Classes
+### Diagrama de Classes
 
 - A definir
 

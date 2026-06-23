@@ -1,0 +1,114 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="XPwAABI3akZHtcftD7Yf">
+    <mxGraphModel dx="975" dy="554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sexp6qlw33q1Kt5gj805-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;UC-12&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="150" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuário" vertex="1">
+          <mxGeometry height="100" width="50" x="60" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pré-condição: usuário autenticado no sistema" vertex="1">
+          <mxGeometry height="80" width="145" x="25" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-20" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="1">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="130" y="330" as="sourcePoint" />
+            <mxPoint x="240" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Usuário acessa as configurações do perfil" vertex="1">
+          <mxGeometry height="50" width="100" x="240" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-22" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="190" />
+            </Array>
+            <mxPoint x="290" y="240" as="sourcePoint" />
+            <mxPoint x="400" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-24" connectable="0" parent="Sexp6qlw33q1Kt5gj805-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2" vertex="1">
+          <mxGeometry relative="1" x="0.2041" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Seleciona &quot;Excluir Conta&quot;" vertex="1">
+          <mxGeometry height="40" width="90" x="390" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-40" edge="1" parent="1" source="Sexp6qlw33q1Kt5gj805-38" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="230" />
+            </Array>
+            <mxPoint x="410" y="240" as="sourcePoint" />
+            <mxPoint x="490" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-41" connectable="0" parent="Sexp6qlw33q1Kt5gj805-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3" vertex="1">
+          <mxGeometry relative="1" x="0.1257" y="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sistema exige confirmação e senha atual" vertex="1">
+          <mxGeometry height="50" width="100" x="440" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-43" edge="1" parent="1" source="Sexp6qlw33q1Kt5gj805-42" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="350" />
+            </Array>
+            <mxPoint x="430" y="360" as="sourcePoint" />
+            <mxPoint x="470" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-44" connectable="0" parent="Sexp6qlw33q1Kt5gj805-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="4" vertex="1">
+          <mxGeometry relative="1" x="0.1702" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Usuário confirma" vertex="1">
+          <mxGeometry height="30" width="60" x="420" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-46" edge="1" parent="1" source="Sexp6qlw33q1Kt5gj805-45" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="410" />
+            </Array>
+            <mxPoint x="360" y="400" as="sourcePoint" />
+            <mxPoint x="360" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-47" connectable="0" parent="Sexp6qlw33q1Kt5gj805-46" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="5" vertex="1">
+          <mxGeometry relative="1" x="0.3915" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sistema apaga todos os dados do usuário e redireciona para a tela principal" vertex="1">
+          <mxGeometry height="130" width="230" x="220" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-49" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="460" />
+            </Array>
+            <mxPoint x="120" y="390" as="sourcePoint" />
+            <mxPoint x="190" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-50" connectable="0" parent="Sexp6qlw33q1Kt5gj805-49" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Se senha incorreta..." vertex="1">
+          <mxGeometry relative="1" x="-0.5418" y="2" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sistema exige mensagem de erro e cancela a operação" vertex="1">
+          <mxGeometry height="60" width="130" x="190" y="430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

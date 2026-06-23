@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="XPwAABI3akZHtcftD7Yf">
+    <mxGraphModel dx="975" dy="554" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Sexp6qlw33q1Kt5gj805-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;UC-10&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="150" x="10" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Usuário" vertex="1">
+          <mxGeometry height="100" width="50" x="60" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pré-condição: usuário autenticado e com ao menos um hábito cadastrado" vertex="1">
+          <mxGeometry height="80" width="145" x="25" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-7" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points" />
+            <mxPoint x="120" y="320" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="20" x="150" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Seleciona hábito na tela principal" vertex="1">
+          <mxGeometry height="50" width="100" x="240" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-11" edge="1" parent="1" source="Sexp6qlw33q1Kt5gj805-9" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.402;exitY=0.037;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="310" y="150" />
+            </Array>
+            <mxPoint x="290" y="190" as="sourcePoint" />
+            <mxPoint x="390" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sistema exibe detalhes do hábito: nome, ícone, cor e categoria" vertex="1">
+          <mxGeometry height="60" width="130" x="390" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-13" edge="1" parent="1" source="Sexp6qlw33q1Kt5gj805-12" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;exitX=0.869;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="290" />
+            </Array>
+            <mxPoint x="400" y="230" as="sourcePoint" />
+            <mxPoint x="470" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sistema calcula e exibe o steak atual, melhor recorde e histórico recente de check-ins" vertex="1">
+          <mxGeometry height="90" width="135" x="330" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2" vertex="1">
+          <mxGeometry height="30" width="60" x="310" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3" vertex="1">
+          <mxGeometry height="30" width="60" x="500" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-17" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="400" />
+              <mxPoint x="130" y="430" />
+            </Array>
+            <mxPoint x="120" y="360" as="sourcePoint" />
+            <mxPoint x="280" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-18" connectable="0" parent="Sexp6qlw33q1Kt5gj805-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Se o hábito não possuir&lt;div&gt;nenhum check-in registrado&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1445" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Sexp6qlw33q1Kt5gj805-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Sistema exibe detalhes do hábito com streak zerado e histórico vazio" vertex="1">
+          <mxGeometry height="50" width="120" x="280" y="450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
