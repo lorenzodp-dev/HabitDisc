@@ -1,6 +1,6 @@
 # HabitGo
 
-**Versão**: v3.0
+**Versão**: v3.1
 
 **Membros**
 Lorenzo, Felipe, Enzo, João Pedro e Maycon
