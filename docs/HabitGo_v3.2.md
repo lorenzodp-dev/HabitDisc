@@ -1,6 +1,6 @@
 # HabitGo
 
-**Versão**: v3.1
+**Versão**: v3.2
 
 **Membros**
 Lorenzo, Felipe, Enzo, João Pedro e Maycon
@@ -54,16 +54,17 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 
 ### 2.1 Requisitos Funcionais
 
-| ID   | Funcionalidade      | Descrição |
-|------|---------------------|-----------|
-| RF01 | Cadastro de Hábito  | O usuário pode criar hábitos com nome livre, ícone, cor e categoria. |
-| RF02 | Check-in Diário     | Interface para marcar hábitos concluídos no dia, com indicador de progresso (ex: 3 de 5 feitos) e exibição do streak atual calculado a partir do histórico de check-ins. |
-| RF03 | Notificações        | Horário personalizado por hábito, notificação de lembrete ao longo do dia e resumo semanal de desempenho. |
-| RF04 | Estatísticas        | Gráfico semanal/mensal, taxa de conclusão e comparativo entre semanas. |
-| RF05 | Categorias          | Categorias predefinidas (Saúde, Produtividade, Aprendizado, Relacionamentos, Finanças) disponíveis a todos os usuários, com possibilidade de criação de categorias personalizadas. |
-| RF06 | Registro de Humor   | Registro emocional diário opcional com histórico. |
-| RF07 | Cadastro de Usuário | O usuário pode criar uma conta com nome, e-mail e senha, editar seu perfil e excluir sua conta. |
-| RF08 | Edição e Exclusão   | O usuário pode editar ou excluir hábitos cadastrados a qualquer momento. |
+| ID   | Funcionalidade        | Descrição |
+|------|-----------------------|-----------|
+| RF01 | Cadastro de Hábito    | O usuário pode criar hábitos com nome livre, ícone, cor e categoria. |
+| RF02 | Check-in Diário       | Interface para marcar hábitos concluídos no dia, com indicador de progresso (ex: 3 de 5 feitos) e exibição do streak atual calculado a partir do histórico de check-ins. |
+| RF03 | Notificações          | Horário personalizado por hábito, notificação de lembrete ao longo do dia e resumo semanal de desempenho. |
+| RF04 | Estatísticas          | Gráfico semanal/mensal, taxa de conclusão e comparativo entre semanas. |
+| RF05 | Categorias            | Categorias predefinidas (Saúde, Produtividade, Aprendizado, Relacionamentos, Finanças) disponíveis a todos os usuários, com possibilidade de criação de categorias personalizadas. |
+| RF06 | Registro de Humor     | Registro emocional diário opcional com histórico. |
+| RF07 | Cadastro de Usuário   | O usuário pode criar uma conta com nome, e-mail e senha, editar seu perfil e excluir sua conta. |
+| RF08 | Edição e Exclusão     | O usuário pode editar ou excluir hábitos cadastrados a qualquer momento. |
+| RF09 | Log de Banco de Dados | O sistema deve registrar automaticamente um histórico de operações críticas (como criação, alteração e exclusão de usuários, hábitos e registros de check-in) para fins de auditoria, segurança e recuperação de dados. |
 
 ### 2.2 Requisitos Não Funcionais
 
@@ -239,22 +240,134 @@ Ir para *HabitGo/docs/diagramas_uc*. Usamos arquivos drawio.
 
 ### 5.1 Modelo Entidade-Relacionamento (MER)
 
-| Entidade    | Atributos                                                      | Relacionamentos |
-|-------------|----------------------------------------------------------------|-----------------|
-| usuario     | id, nome, email, senha_hash, criado_em                         | 1 usuário possui N hábitos; 1 usuário possui N registros de humor; 1 usuário possui N dispositivos; 1 usuário possui N categorias personalizadas |
-| habito      | id, nome, icone, cor, id_categoria, id_usuario, criado_em      | 1 hábito pertence a 1 usuário; 1 hábito pertence a 1 categoria; 1 hábito possui N check-ins; 1 hábito possui N lembretes |
-| categoria   | id, nome, icone, cor, id_usuario (null = global), predefinida  | 1 categoria possui N hábitos; categorias predefinidas não pertencem a nenhum usuário (id_usuario = null) |
-| checkin     | id, id_habito, data, concluido                                 | N check-ins pertencem a 1 hábito |
-| humor       | id, id_usuario, data, valor (1-5), observacao                  | N humores pertencem a 1 usuário |
-| lembrete    | id, id_habito, horario, ativo                                  | N lembretes pertencem a 1 hábito |
-| dispositivo | id, id_usuario, token_push, plataforma, criado_em              | N dispositivos pertencem a 1 usuário |
+| Entidade | Atributos | Relacionamentos |
+| :--- | :--- | :--- |
+| usuario | id, nome, email, senha_hash, criado_em | 1 usuário possui N hábitos; 1 usuário possui N registros de humor; 1 usuário possui N dispositivos; 1 usuário está vinculado a N categorias através de `usuario_categoria` |
+| categoria | id, nome, icone, cor, predefinida | 1 categoria possui N hábitos; 1 categoria está vinculada a N usuários através de `usuario_categoria` |
+| usuario_categoria | id_usuario, id_categoria, criado_em | Tabela Associativa (N:N): Vincula os usuários às categorias que eles utilizam (tanto as globais quanto as personalizadas) |
+| habito | id, nome, icone, cor, id_categoria, id_usuario, criado_em | 1 hábito pertence a 1 usuário; 1 hábito pertence a 1 categoria; 1 hábito possui N check-ins; 1 hábito possui N lembretes |
+| checkin | id, id_habito, data, concluido | N check-ins pertencem a 1 hábito |
+| humor | id, id_usuario, data, valor (1-5), observacao | N humores pertencem a 1 usuário |
+| lembrete | id, id_habito, horario, ativo | N lembretes pertencem a 1 hábito |
+| dispositivo | id, id_usuario, token_push, plataforma, criado_em | N dispositivos pertencem a 1 usuário |
 
-> **Nota técnica:** a tabela `dispositivo` armazena os tokens push gerados pelo Firebase (Android), APNs (iOS) ou Web Push API (navegadores) no momento em que o usuário ativa as notificações. Cada token identifica um dispositivo específico, permitindo que o servidor entregue notificações ao usuário em todos os seus dispositivos.
+> **Nota técnica:** A tabela associativa `usuario_categoria` implementa o relacionamento Muitos-para-Muitos (N:N) entre as tabelas `usuario` e `categoria`. Isso elimina a necessidade de chaves estrangeiras nulas (`null`) na tabela de categorias. Quando um novo usuário se cadastra, o sistema gera automaticamente os vínculos dele com as categorias globais (`predefinida = true`). Se o usuário criar uma categoria customizada, o sistema insere o registro em `categoria` (`predefinida = false`) e cria o vínculo exclusivo para este usuário.
 
-> **Nota técnica:** o streak não é armazenado como tabela própria. Ele é calculado dinamicamente a partir do histórico de check-ins sempre que necessário, evitando inconsistências entre dados primários e derivados.
+> **Nota técnica:** A tabela `dispositivo` armazena os tokens push gerados pelo Firebase (Android), APNs (iOS) ou Web Push API (navegadores) no momento em que o usuário ativa as notificações. Cada token identifica um dispositivo específico, permitindo que o servidor entregue notificações ao usuário em todos os seus dispositivos.
+
+> **Nota técnica:** O streak não é armazenado como tabela própria. Ele é calculado dinamicamente a partir do histórico de check-ins sempre que necessário, evitando inconsistências entre dados primários e derivados.
+
+### 5.2 Dicionário de Dados
+
+#### 5.2.1. Tabela: `usuarios`
+Armazena as informações cadastrais e credenciais dos usuários do sistema.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id` | BIGINT | PK, AUTO_INCREMENT | Identificador único do usuário. |
+| `nome` | VARCHAR(100) | NOT NULL | Nome completo ou de exibição do usuário. |
+| `email` | VARCHAR(150) | UNIQUE, NOT NULL | E-mail do usuário (usado para login e comunicação). |
+| `senha_hash` | VARCHAR(255) | NOT NULL | Hash seguro da senha do usuário (nunca armazenada em texto plano). |
+| `criado_em` | TIMESTAMP | DEFAULT NOW() | Data e hora em que a conta foi criada. |
+
+#### 5.2.2. Tabela: `categorias`
+Armazena tanto as categorias globais predefinidas pelo sistema quanto as customizadas pelos usuários.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id` | INT | PK, AUTO_INCREMENT | Identificador único da categoria. |
+| `nome` | VARCHAR(50) | NOT NULL | Nome da categoria (ex: Saúde, Finanças). |
+| `icone` | VARCHAR(50) | NOT NULL | String identificadora do ícone (ex: 'heart', 'book'). |
+| `cor` | VARCHAR(7) | NOT NULL | Código hexadecimal da cor associada (ex: '#FF5733'). |
+| `predefinida` | BOOLEAN | DEFAULT FALSE | Indica se a categoria é global (`true`) ou personalizada (`false`). |
+
+#### 5.2.3. Tabela: `usuario_categoria`
+Gerencia o relacionamento Muitos para Muitos (N:N) entre usuários e as categorias às quais eles têm acesso ou que criaram de forma personalizada.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id_usuario` | BIGINT | PK, FK (`usuario.id`) | Identificador do usuário relacionado. |
+| `id_categoria` | INT | PK, FK (`categoria.id`) | Identificador da categoria relacionada. |
+| `criado_em` | TIMESTAMP | DEFAULT NOW() | Data e hora em que o vínculo foi criado. |
+
+#### 5.2.4. Tabela: `habitos`
+Registra as configurações e detalhes dos hábitos criados pelos usuários.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id` | BIGINT | PK, AUTO_INCREMENT | Identificador único do hábito. |
+| `nome` | VARCHAR(100) | NOT NULL | Nome descritivo do hábito (ex: 'Beber 2L de água'). |
+| `icone` | VARCHAR(50) | NOT NULL | Nome do ícone para estilização do hábito na interface. |
+| `cor` | VARCHAR(7) | NOT NULL | Código hexadecimal da cor escolhida pelo usuário para o hábito. |
+| `id_categoria` | INT | FK (`categoria.id`), NOT NULL | Categoria à qual este hábito pertence. |
+| `id_usuario` | BIGINT | FK (`usuario.id`), NOT NULL | Usuário proprietário deste hábito. |
+| `criado_em` | TIMESTAMP | DEFAULT NOW() | Data e hora de criação do hábito. |
+
+#### 5.2.5. Tabela: `checkins`
+Armazena o histórico diário de conclusões de cada hábito para o cálculo de métricas e streaks.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id` | BIGINT | PK, AUTO_INCREMENT | Identificador único do check-in. |
+| `id_habito` | BIGINT | FK (`habito.id`), NOT NULL | Hábito que foi marcado como concluído. |
+| `data` | DATE | NOT NULL | Data em que o hábito foi realizado. |
+| `concluido` | BOOLEAN | DEFAULT TRUE | Status da conclusão (permite marcar e desmarcar a atividade). |
+
+#### 5.2.6. Tabela: `humores`
+Registra o estado emocional diário opcional inserido pelo usuário.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id` | BIGINT | PK, AUTO_INCREMENT | Identificador único do registro de humor. |
+| `id_usuario` | BIGINT | FK (`usuario.id`), NOT NULL | Usuário que realizou o registro emocional. |
+| `data` | DATE | NOT NULL | Data do registro do humor (restrito a apenas um por dia por usuário). |
+| `valor` | INT | NOT NULL (CHECK 1-5) | Avaliação do humor na escala de 1 (Muito Ruim) a 5 (Excelente). |
+| `observacao` | TEXT | NULL | Notas, diário ou comentários opcionais sobre o dia do usuário. |
+
+#### 5.2.7. Tabela: `lembretes`
+Guarda os horários de disparos de notificações configurados pelo usuário para cada hábito.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id` | BIGINT | PK, AUTO_INCREMENT | Identificador único do lembrete. |
+| `id_habito` | BIGINT | FK (`habito.id`), NOT NULL | Hábito associado ao lembrete de notificação. |
+| `horario` | TIME | NOT NULL | Horário programado para disparar o alarme (HH:MM:SS). |
+| `ativo` | BOOLEAN | DEFAULT TRUE | Define se o lembrete específico está ligado ou desligado. |
+
+#### 5.2.8. Tabela: `dispositivos`
+Armazena tokens de push notification para vincular múltiplos aparelhos a uma única conta de usuário.
+
+| Campo | Tipo de Dado | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id` | BIGINT | PK, AUTO_INCREMENT | Identificador único do dispositivo. |
+| `id_usuario` | BIGINT | FK (`usuario.id`), NOT NULL | Usuário proprietário do dispositivo. |
+| `token_push` | VARCHAR(255) | NOT NULL, UNIQUE | Token único gerado pelo Firebase (FCM), APNs ou Web Push. |
+| `plataforma` | VARCHAR(20) | NOT NULL | Identifica o SO do dispositivo (ex: 'android', 'ios', 'web'). |
+| `criado_em` | TIMESTAMP | DEFAULT NOW() | Data de registro/vinculação do dispositivo ao sistema. |
 
 ---
 
 ## 6. Requisitos Técnicos
 
 - A definir
+
+
+
+
+
+<!--
+ATENÇÃO GRUPO: Decisão sobre Criptografia do Nome do Hábito
+
+Por que NÃO criptografamos o nome do hábito diretamente no banco de dados (via código)?
+ - Destruição do Desempenho (RNF01): O banco de dados perderia a capacidade de usar índices de texto. Consultas simples como `WHERE nome LIKE '%agua%'` deixariam de funcionar.
+ - Complexidade Inútil: Para ordenar os hábitos por ordem alfabética, o backend teria que baixar todos os registros do banco, descriptografar um por um na memória do servidor e só então ordenar. Isso inviabilizaria o app em escala.
+
+Como garantimos a privacidade e conformidade com a LGPD (RNF03) sem perder desempenho?
+ 1. Criptografia em Repouso (Encryption at Rest): Ativada diretamente no servidor do banco de dados (PostgreSQL/MySQL). Se alguém invadir o servidor e roubar o HD, os dados estarão ilegíveis.
+ 2. Criptografia em Trânsito: Uso obrigatório de HTTPS para impedir interceptação de dados na rede.
+ 3. Isolamento Rígido de Rotas: A API valida estritamente o token do usuário. O Usuário X nunca tem permissão de ler ou alterar dados do Usuário Y.
+
+
+Comentario gerado com IA. Estava discutindo sobre a privacidade do usuario quanto aos nomes de um habito (as vezes, um usuario pode nao querer mostrar o que ele precisa melhorar)
+-- Lorenzo
+-->
