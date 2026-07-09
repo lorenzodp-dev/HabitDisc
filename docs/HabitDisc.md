@@ -1,6 +1,6 @@
-# HabitGo
+# HabitDisc
 
-**Versão**: v3.2
+**Versão**: v4.0
 
 **Membros**
 Lorenzo, Felipe, Enzo, João Pedro e Maycon
@@ -24,7 +24,7 @@ Lorenzo, Felipe, Enzo, João Pedro e Maycon
 
 ### 1.1 Descrição Geral do Sistema
 
-O HabitGo é um aplicativo multiplataforma (web, desktop e mobile) de gestão e rastreamento de hábitos pessoais. O app tem como proposta central ajudar usuários a criarem, acompanharem e manterem hábitos em seu cotidiano, principalmente pelas notificações/lembretes, combinando simplicidade de uso com recursos de motivação e autoconhecimento.
+O HabitDisc é um aplicativo multiplataforma (web, desktop e mobile) de gestão e rastreamento de hábitos pessoais. O app tem como proposta central ajudar usuários a criarem, acompanharem e manterem hábitos em seu cotidiano, principalmente pelas notificações/lembretes, combinando simplicidade de uso com recursos de motivação e autoconhecimento.
 
 ### 1.2 Objetivo do Projeto
 
@@ -38,15 +38,15 @@ Desenvolver um aplicativo multiplataforma funcional que permita ao usuário:
 
 ### 1.3 Público-Alvo
 
-O HabitGo é destinado a pessoas com 15 anos ou mais que desejam organizar melhor sua rotina, desenvolver novos hábitos ou superar hábitos negativos. O app atende perfis variados: estudantes, profissionais, atletas amadores e qualquer pessoa interessada em produtividade e bem-estar pessoal.
+O HabitDisc é destinado a pessoas com 15 anos ou mais que desejam organizar melhor sua rotina, desenvolver novos hábitos ou superar hábitos negativos. O app atende perfis variados: estudantes, profissionais, atletas amadores e qualquer pessoa interessada em produtividade e bem-estar pessoal.
 
 ### 1.4 Justificativa
 
-A formação de hábitos é a base para uma vida produtiva e ordenada. Entretanto, grande parte das pessoas encontra dificuldade em manter consistência sem ferramentas adequadas de acompanhamento e motivação. O HabitGo surge como solução acessível e completa, unindo rastreamento eficiente com recursos de engajamento que reduzem o abandono ao longo do tempo.
+A formação de hábitos é a base para uma vida produtiva e ordenada. Entretanto, grande parte das pessoas encontra dificuldade em manter consistência sem ferramentas adequadas de acompanhamento e motivação. O HabitDisc surge como solução acessível e completa, unindo rastreamento eficiente com recursos de engajamento que reduzem o abandono ao longo do tempo.
 
 ### 1.5 Limitações do Sistema
 
-O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por utilizar o aplicativo. O crescimento e o desenvolvimento pessoal dependem do comprometimento e da disciplina de quem usa o sistema.
+O HabitDisc não afirma categoricamente que todo usuário irá evoluir apenas por utilizar o aplicativo. O crescimento e o desenvolvimento pessoal dependem do comprometimento e da disciplina de quem usa o sistema.
 
 ---
 
@@ -83,7 +83,7 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 ### 3.1 Atores
 
 - **Usuário:** pessoa que utiliza o aplicativo para gerenciar seus hábitos.
-- **Sistema:** o próprio aplicativo HabitGo, responsável por processar e exibir dados.
+- **Sistema:** o próprio aplicativo HabitDisc, responsável por processar e exibir dados.
 
 ### 3.2 Lista de Casos de Uso
 
@@ -228,7 +228,7 @@ O HabitGo não afirma categoricamente que todo usuário irá evoluir apenas por 
 
 ### Diagrama de Casos de Uso
 
-Ir para *HabitGo/docs/diagramas_uc*. Usamos arquivos drawio.
+Ir para *HabitDisc/docs/diagramas_uc*. Usamos arquivos drawio.
 
 ### Diagrama de Classes
 
